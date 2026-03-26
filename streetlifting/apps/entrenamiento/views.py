@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 # Create your views here.
 
-def index(request):
-    return HttpResponse('Hola soy albertoooo')
+def crear_entrenamiento(request):
+    return render(request, 'entrenamiento/crear_entrenamiento.html', context={})
